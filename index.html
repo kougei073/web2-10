@@ -85,7 +85,7 @@ for(var i=0; i< files.length; i++){
   info.innerHTML += "name:" + f.name + "type:" + f.type + "size" + f.size / 1000 + "kb" + "<br />";
                              var reader = new FileReader();
                              
-                             if(!f.type.match('image.*') && !f.type.match('text'.*)){
+                             if(!f.type.match('image.*') && !f.type.match('text.*')){
                              alert("error");
                              continue;
                              }
