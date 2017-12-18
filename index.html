@@ -22,8 +22,10 @@ function cle() {
   
   //データをクリアする
  function remove() {
-  storage.removeItem();
-  show_result();
+   var k = document.getElementById("k").value;
+   storage.removeItem(k);
+   k = "";
+   show_result();
 }
 
 //保存されているデータをリスト表示する
