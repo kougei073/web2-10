@@ -14,13 +14,13 @@ function set() {
   show_result();
 }
 
-//データをクリアする
+//データを全て削除する
 function cle() {
   storage.clear();
   show_result();
 }
   
-  //データをクリアする
+  //データを削除する
  function remove() {
    var k = document.getElementById("k").value;
    storage.removeItem(k);
@@ -56,7 +56,7 @@ function show_result() {
 </p>
   <p>
 <div id="show_result"></div>
-<input type="button" value="ストレージをクリア" onClick="cle()">
+<input type="button" value="ストレージを全て削除" onClick="cle()">
 </p>
 </body>
 </html>
