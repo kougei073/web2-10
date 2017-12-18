@@ -41,33 +41,6 @@ function show_result() {
   //上のループで作成されたテキストを表示する
   document.getElementById("show_result").innerHTML = result;
 }
-</script>
-<title>Webプログラミング　課題</title>
-</head>
-<body>
-<p>
-キー：<input id="k" type="text">
-値：<input id="v" type="text">
-<input type="button" value="ストレージに保存" onClick="set()">
-</p>
-<p>
-<div id="show_result"></div>
-<input type="button" value="ストレージを削除" onClick="remove()">
-</p>
-  <p>
-<div id="show_result"></div>
-<input type="button" value="ストレージを全て削除" onClick="cle()">
-</p>
-
-<section id="file">
-  <h1>ドラックアンドロップ</h1>
-  <div id="drop" style="width:700px; height:150px; padding:10px; border:3px; solid"
-       ondragover="onDragOver(event)" ></div>
-  <p>表示</p>
-  <div id="info" ></div>
-  <div id="disp" ></div>
-  </section>
-
 if(!window.File){
 window.alert("error");
 }else{
@@ -122,5 +95,31 @@ event.preventDefault();
                              event.preventDefault();
                              }
                              </script>
+<title>Webプログラミング　課題</title>
+</head>
+<body>
+<p>
+キー：<input id="k" type="text">
+値：<input id="v" type="text">
+<input type="button" value="ストレージに保存" onClick="set()">
+</p>
+<p>
+<div id="show_result"></div>
+<input type="button" value="ストレージを削除" onClick="remove()">
+</p>
+  <p>
+<div id="show_result"></div>
+<input type="button" value="ストレージを全て削除" onClick="cle()">
+</p>
+
+<section id="file">
+  <h1>ドラックアンドロップ</h1>
+  <div id="drop" style="width:700px; height:150px; padding:10px; border:3px; solid"
+       ondragover="onDragOver(event)" ></div>
+  <p>表示</p>
+  <div id="info" ></div>
+  <div id="disp" ></div>
+  </section>
+
 </body>
 </html>
